@@ -60,6 +60,8 @@ class ClientController extends Controller
 
         Client::create($dados);
 
+        $request->session()->flash('AdicionarCliente', 'O Cliente foi adicionado com sucesso!');
+
         return redirect('/clients');
     }
 
@@ -108,7 +110,7 @@ class ClientController extends Controller
     {
         $client = Client::find($id);
 
-        $request->session()->flash('status', 'O Cliente foi removido com sucesso!');
+        $request->session()->flash('RemoverCliente', 'O Cliente foi removido com sucesso!');
 
         $client->delete();
 

@@ -17,8 +17,8 @@
         <div class="mb-3">
             <label for="observacao" class="form-label">Observação</label>
             <textarea class="form-control" id="observacao" name="observacao" rows="3" placeholder="Digite a Observação" required></textarea>
-        </div> 
+        </div>
 
-        <button class="btn btn-success" type="submit">Enviar</button>       
+        <button class="btn btn-success" type="submit">Enviar</button>
     </form>
-@endsection    
+@endsection
